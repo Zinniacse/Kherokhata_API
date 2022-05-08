@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "8cf8e7b4-bc63-42e9-8880-87d65c3cb861",
+		"name": "Kherokhata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cashbox",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DayendCash\": \"800\",\r\n    \"WithdrawCash\": \"900\",\r\n    \"Depositcash\": \"500\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.digitalistic.co/api/v1/cashbox",
+					"protocol": "https",
+					"host": [
+						"api",
+						"digitalistic",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cashbox"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "duepayandreceive",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"accounttype\": \"sales return\",\r\n    \"transactiontype\": \"cash\",\r\n    \"clientname\": \"zinnia\",\r\n    \"clientmobile\": \"01747106458\",\r\n    \"clientamount\":\"1000\",\r\n    \"date\":\"30/1/2024\"\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.digitalistic.co/api/v1/duepayandreceive",
+					"protocol": "https",
+					"host": [
+						"api",
+						"digitalistic",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"duepayandreceive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "expense",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rent\": \"50000\",\r\n    \"salary\": \"500000\",\r\n    \"others\": \"10000000\"\r\n  \r\n}\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.digitalistic.co/api/v1/expense",
+					"protocol": "https",
+					"host": [
+						"api",
+						"digitalistic",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"expense"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newtransaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accounttype\": \"sales return\",\r\n    \"transactiontype\": \"cash\",\r\n    \"clientname\": \"zinnia\",\r\n    \"clientmobile\": \"01747106458\",\r\n    \"clientamount\":\"10000\"\r\n\r\n}\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.digitalistic.co/api/v1/newtransaction",
+					"protocol": "https",
+					"host": [
+						"api",
+						"digitalistic",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"newtransaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\":\"01747106451\",\r\n    \"password\":\"123458\"\r\n   \r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.digitalistic.co/api/v1/users",
+					"protocol": "https",
+					"host": [
+						"api",
+						"digitalistic",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "handshake",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deviceid\": \"Vivo\",\r\n    \"fmgtoken\": \"vivo\",\r\n    \"latitude\": \"25.4522s\",\r\n    \"longitude\": \"21.877393\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.digitalistic.co/api/v1/handshake",
+					"protocol": "https",
+					"host": [
+						"api",
+						"digitalistic",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"handshake"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
